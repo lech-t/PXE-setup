@@ -8,7 +8,7 @@ This script does initial configuration of the PXE installation environment. It s
 
 Usage: $0 [–tftp] [–nfs] [–http] [–ftp] [–datadir <directory>] [–all]
 
-–tftp Run TFTP setup –nfs Run NFS setup –http Run HTTP setup –ftp Run FTP setup –all Setup all of the above –datadir Specify data directory
+--tftp Run TFTP setup --nfs Run NFS setup --http Run HTTP setup --ftp Run FTP setup --all Setup all of the above –datadir Specify data directory
 
 
 You can set up the PXE server with TFTP and other chosen protocols. You must use the `--tftp` parameter, then pick any other available protocols, like NFS, FTP, HTTP, or just use `--all` to install and set up all of them. For TFTP, the path for the boot files is hardcoded: `/srv/tftp`, because it will never need much free space. All other files will be served from the same location specified by `--datadir`.
